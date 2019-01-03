@@ -84,6 +84,8 @@
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Reading Time</h4>
+            <p "~{{ article.stats['wc'] }} words">~{{ article.stats['read_mins'] }} min read</p>
             {% if article.date %}
             <h4>Published</h4>
             {% set day = article.date.strftime('%d')|int %}
@@ -91,7 +93,7 @@
             {% endif %}
             {% include '_includes/last_updated.html' %}
             {% include '_includes/series.html' %}
-            {% if article.category|trim|count > 0 %}
+            {% if (article.category|trim|count > 0) and (article.category != 'MYPAGE') %}
             <h4>Category</h4>
             <a class="category-link" href="{{ SITEURL }}/categories.html#{{ category.slug }}-ref">{{ article.category }}</a>
             {% endif %}
