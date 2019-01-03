@@ -53,13 +53,13 @@
             {{ share_links(article) }}
             {% from '_includes/comments.html' import comments with context %}
             {{ comments(article) }}
-            <hr/>
             {% include '_includes/related_posts.html' with context %}
-            {% if article.prev_article or article.next_article %}
+            {% if (article.prev_article and article.prev_article.category != 'MYPAGE') or (article.next_article and article.next_article.category != 'MYPAGE') %}
+            <hr />
             <aside>
             <nav>
             <ul class="articles-timeline">
-                {% if article.prev_article %}
+                {% if article.prev_article.category != 'MYPAGE' %}
                     {% set ptitle = article.prev_article.title|striptags|e %}
                     {% set pv_title = article.prev_article.title|striptags %}
                     {%if article.prev_article.subtitle %}
@@ -68,7 +68,7 @@
                     {% endif %}
                 <li class="previous-article">« <a href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
-                {% if article.next_article %}
+                {% if article.next_article.category != 'MYPAGE' %}
                     {% set ntitle = article.next_article.title|striptags|e %}
                     {% set nv_title = article.next_article.title|striptags %}
                     {%if article.next_article.subtitle %}

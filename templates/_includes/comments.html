@@ -1,5 +1,6 @@
 {% macro comments(article) %}
     {% if DISQUS_SITENAME and SITEURL and article.status != 'draft' %}
+<hr />
 <section>
 {% if article.comments_intro %}
 <p id="comment-message">{{ article.comments_intro }} </p>
