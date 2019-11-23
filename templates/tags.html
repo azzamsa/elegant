@@ -63,7 +63,11 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
                     {{ article.locale_date }}
                 </time>
                 <a href="{{ SITEURL }}/{{ article.url }}">
-                    {{ article.title }}
+                    {% if article.favourite %}
+                        {{ FAVOURITE_SYMBOL }} {{ article.title }}
+                    {% else %}
+                        {{ article.title }}
+                    {% endif %}
                     {%if article.subtitle %}
                     <small class="subtitle">
                         {{ article.subtitle }}

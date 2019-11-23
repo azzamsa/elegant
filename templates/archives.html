@@ -58,7 +58,11 @@ Full archives of {{ SITENAME|striptags|e }} blog.
                 {% endif %}
 
                 <a href="{{ SITEURL }}/{{ article.url }}">
-                    {{ article.title }}
+                    {% if article.favourite %}
+                        {{ FAVOURITE_SYMBOL }} {{ article.title }}
+                    {% else %}
+                        {{ article.title }}
+                    {% endif %}
                     {%if article.subtitle %}
                     <small class="subtitle">
                         {{ article.subtitle }}

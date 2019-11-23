@@ -57,8 +57,12 @@ All categories of the {{ SITENAME|striptags|e }} blog.
                                 <time itemprop="dateCreated" datetime="{{ article.date.isoformat() }}">
                                     {{ article.locale_date }}
                                 </time>
-                                    <a href="{{ SITEURL }}/{{ article.url }}">
+                                <a href="{{ SITEURL }}/{{ article.url }}">
+                                    {% if article.favourite %}
+                                        {{ FAVOURITE_SYMBOL }} {{ article.title }}
+                                    {% else %}
                                         {{ article.title }}
+                                    {% endif %}
                                         {%if article.subtitle %}
                                         <small class="subtitle">
                                             {{ article.subtitle }}
