@@ -81,12 +81,11 @@
             {{ comments_section(article) }}
             <hr/>
             {% include '_includes/related_posts.html' with context %}
-            {% if (article.prev_article and article.prev_article.visible != 'False')
-            or (article.next_article and article.next_article.visible != 'False') %}
+            {% if article.prev_article or article.next_article %}
             <aside>
             <nav>
             <ul class="articles-timeline">
-                {% if article.prev_article.visible != 'False' %}
+                {% if article.next_article %}
                     {% set ptitle = article.prev_article.title|striptags|e %}
                     {% set pv_title = article.prev_article.title|striptags %}
                     {%if article.prev_article.subtitle %}
@@ -95,7 +94,7 @@
                     {% endif %}
                 <li class="previous-article">« <a href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
-                {% if article.next_article.visible != 'False' %}
+                {% if article.next_article %}
                     {% set ntitle = article.next_article.title|striptags|e %}
                     {% set nv_title = article.next_article.title|striptags %}
                     {%if article.next_article.subtitle %}
@@ -119,7 +118,7 @@
             {% endif %}
             {% include '_includes/last_updated.html' %}
             {% include '_includes/series.html' %}
-            {% if article.category|trim|count > 0 and article.visible != 'False' %}
+            {% if article.category|trim|count > 0 %}
             <h4>Category</h4>
             {% from '_includes/_defaults.html' import CATEGORIES_URL with context %}
             <a class="category-link" href="{{ SITEURL }}/{{ CATEGORIES_URL }}#{{ category.slug }}-ref">{{ article.category }}</a>
