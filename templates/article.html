@@ -85,7 +85,7 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                {% if article.next_article %}
+                {% if article.prev_article %}
                     {% set ptitle = article.prev_article.title|striptags|e %}
                     {% set pv_title = article.prev_article.title|striptags %}
                     {%if article.prev_article.subtitle %}

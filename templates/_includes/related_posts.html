@@ -1,5 +1,4 @@
 {% if article.related_posts %}
-<hr/>
 {% from '_includes/_defaults.html' import RELATED_POSTS_LABEL with context %}
 <section>
     <h2>{{ RELATED_POSTS_LABEL }}</h2>
@@ -14,5 +13,6 @@
 <li><a href="{{ SITEURL }}/{{ related_post.url }}" title="{{ title }}">{{ v_title }}</a></li>
 {% endfor %}
 </ul>
+<hr />
 </section>
 {% endif %}
