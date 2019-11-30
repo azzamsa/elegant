@@ -1,0 +1,84 @@
+/* Stay in Touch Icons */
+/* Credit: https://codepen.io/ruandre/pen/howFi */
+.ir {
+  display: block;
+  overflow: visible;
+  padding: 0 0 100%;
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+
+.ir > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.soc {
+  display: block;
+  font-size: 0;
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  width: 80rem;
+  max-width: 100%;
+}
+
+.soc li {
+  display: inline-block;
+  margin: 8px;
+  margin: 0.2rem;
+}
+
+.soc a, .soc svg {
+  display: block;
+  border-bottom: thin dashed white;
+}
+
+.soc a {
+  position: relative;
+  height: 46px;
+  height: 3.6rem;
+  width: 46px;
+  width: 3.6rem;
+}
+
+
+.sicon:hover {
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.sicon {
+  color: black;
+  background: white;
+}
+
+.twitter:hover {
+  background: #1A91DA;
+}
+
+.github:hover {
+  background: grey;
+}
+
+.stackoverflow:hover {
+  background: #DD6D1C;
+}
+
+.linkedin:hover {
+  background: #0077B5;
+}
+
+.gitlab:hover {
+  background: #DD6D1C;
+}
