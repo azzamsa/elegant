@@ -63,6 +63,12 @@
   background: white;
 }
 
+.gitlab svg{
+  width: 30px;
+  margin-left: 5px;
+  border-bottom: thin dashed white;
+}
+
 .twitter:hover {
   background: #1A91DA;
 }
