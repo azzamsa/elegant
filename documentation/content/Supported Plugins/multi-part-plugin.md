@@ -1,15 +1,19 @@
 ---
 Title: Displaying a Series Information for Your Multipart Articles
-Tags: pelican-plugin, navigation, web-design
+Subtitle: Deprecated
+Tags: pelican-plugin, navigation, web-design, deprecated
 Category: Supported Plugins
 Date: 2014-04-20 18:18
 Slug: how-to-use-multi-part-plugin
-Comment_id: 3ws2xke-how-to-use-multi-part-plugin
-Subtitle:
 Summary: Elegant can be configured to provide a series section on the right sidebar. Only visible in articles that are labelled as part of a series, this indicator allows navigation between the articles in the series.
-Keywords:
 Authors: Talha Mansoor, Jack De Winter
 ---
+
+!!! important "Deprecation"
+
+    The `multi-part` plugin has been deprecated in favor of the `series`
+    plugin. For an up-to-date article on using the `series` plugin, [go
+    here]({filename}./series-plugin.md).
 
 When writing articles about certain topics, it is advantageous to split a single article into
 multiple articles. Without splitting the article up, the author would be forced to cram all
@@ -30,11 +34,11 @@ Here is an example of what the Series section may look like:
 
 ## Configuration
 
-To enable the reading time for your articles, you need to add `series` to the `PLUGINS`
+To enable the reading time for your articles, you need to add `multi-part` to the `PLUGINS`
 configuration variable in your Pelican configuration.
 
 ```python
-PLUGINS = ['series']
+PLUGINS = ['multi-part']
 ```
 
 In addition, the `SERIES_TITLE` configuration variable can be set to specify the title used for
@@ -56,7 +60,7 @@ created, Pelican provides Elegant with a list of all pages that have the same va
 each article. The titles for those pages is then displayed in sorted order, with the current
 page presented in _italics_ and the other pages presented as a link to those pages.
 
-```Markdown
+```markdown
 series: Maximizing Elegant
 series_index: 2
 ```
