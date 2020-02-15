@@ -219,6 +219,12 @@ PROJECTS = [{
 {% set ARCHIVES_URL = ARCHIVES_URL %}
 {% endif %}
 
+{% if not FAVOURITES_URL %}
+{% set FAVOURITES_URL = 'favorites.html' %}
+{% else %}
+{% set FAVOURITES_URL = FAVOURITES_URL %}
+{% endif %}
+
 {% if not SEARCH_URL %}
 {% set SEARCH_URL = 'search.html' %}
 {% else %}
