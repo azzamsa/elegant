@@ -69,6 +69,13 @@
                                   {% endif %}/"><span class=site-name>{{ SITENAME }}</span></a>
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right top-menu">
+
+                                {% if DEFAULT_LANG == "en" %}
+                                <li><a href="{{ PERMANENTURL }}/id">🇮🇩</a></li>
+                                {% else %}
+                                <li><a href="{{ PERMANENTURL }}/en">🇬🇧</a></li>
+                                {% endif %}
+
                                 <li {% if page_name == 'index' %} class="active"{% endif %}>
                                     <a href=
                                        {% if SITEURL %}
