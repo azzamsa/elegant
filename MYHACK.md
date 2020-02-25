@@ -7,3 +7,4 @@
 - Add favorites page into navigation bar
 - Add custom css style for 'Stay in Touch' icons
 - Add language selection
+- Translate theme
