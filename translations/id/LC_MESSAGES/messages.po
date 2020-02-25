@@ -1,0 +1,98 @@
+# Indonesian translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-02-25 16:49+0700\n"
+"PO-Revision-Date: 2020-02-25 15:59+0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: id\n"
+"Language-Team: id <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: templates/archives.html:4
+msgid "All Posts · "
+msgstr "Semua Post · "
+
+#: templates/archives.html:31
+msgid "All Posts"
+msgstr "Semua Post"
+
+#: templates/article.html:116
+msgid "Published"
+msgstr "Terbit"
+
+#: templates/article.html:123
+msgid "Category"
+msgstr "Kategori"
+
+#: templates/article.html:129 templates/base.html:96
+msgid "Tags"
+msgstr "Tag"
+
+#: templates/base.html:86
+msgid "Archive"
+msgstr "Arsip"
+
+#: templates/base.html:94
+msgid "Favorites"
+msgstr "Favorit"
+
+#: templates/base.html:95
+msgid "Categories"
+msgstr "Kategori"
+
+#: templates/categories.html:4
+msgid "All Categories · "
+msgstr "Semua Kategori · "
+
+#: templates/categories.html:36
+msgid "All Categories"
+msgstr "Semua Kategori"
+
+#: templates/favorites.html:4
+msgid "Favorite Posts · "
+msgstr "Post Favorit · "
+
+#: templates/favorites.html:31
+msgid "Favorite Posts"
+msgstr "Post Favorit"
+
+#: templates/index.html:95
+msgid "Recent Posts"
+msgstr "Post Terbaru"
+
+#: templates/index.html:95
+msgid "all posts"
+msgstr "semua post"
+
+#: templates/index.html:110
+msgid "posted in"
+msgstr "dipost di"
+
+#: templates/search.html:4
+msgid "Search · "
+msgstr "Pencarian · "
+
+#: templates/tags.html:4
+msgid "All Tags · "
+msgstr "Semua Tag · "
+
+#: templates/tags.html:36
+msgid "All Tags"
+msgstr "Semua Tag"
+
+msgid "Reading Time"
+msgstr "Waktu baca"
+
+msgid " min read"
+msgstr " menit"
+
